@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* ---------------------------------GLOBAL-STYLE------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d3c9c9;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+body {
+    background: url(images/stoneinwater.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.plate {
+    box-shadow:rgba(17, 14, 14, 0.448) 0px 0px 5px 5px;
+    top: 14vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+}
+
+/*----------------------------------NAV-BAR-------------------------------------------------------*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    background-color: #fbfafa;
+    position: sticky;
+    top: 5px;
+    width: 80%;
+    border-radius: 40px;
+    z-index: 3;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    padding-left: 4vw;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    list-style: none;
+    margin-right: 4vw;
+}
+
+.nav-links li {
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.nav-links li a:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.cross {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+
+/*----------------------------------HOME----------------------------------------------------------*/
+
+#home {
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-container {
+    max-width: 800px;
+    color: rgb(255, 255, 255);
+}
+
+.home-container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.home-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*----------------------------------VIEWPORT------------------------------------------------------*/
+
+@media screen and (max-width: 1080px) {
+    nav {
+        width: 90%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        padding: 1.2rem 1rem .8rem 1rem;
+        font-size: xx-large;
+    }
+
+    .plate {
+        top: 80px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    nav {
+        width: 97%;
+    }
+}
